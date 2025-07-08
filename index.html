@@ -149,7 +149,7 @@
            }
         }
 
-        chatLog.innerHTML += `\nAI: ${reply}`;
+        chatLog.innerHTML = chatLog.innerHTML.replace("AI: Thinking...", `AI: ${reply}`);
       } catch (err) {
         chatLog.innerHTML += `\nAI: Sorry, something went wrong.`;
         console.error(err);
