@@ -134,7 +134,7 @@
       chatLog.innerHTML += `\nAI: Thinking...`;
 
       try {
-        const response = await fetch("https://doable-actual-backend.vercel.app/", {
+        const response = await fetch("https://doable-actual-backend.vercel.app/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
